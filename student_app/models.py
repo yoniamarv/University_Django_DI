@@ -1,16 +1,15 @@
 from django.db import models
 
-# Create your models here.
 class Student(models.Model):
-	prenom = models.CharField(max_length=20)
-	nom = models.CharField(max_length=20)
-	date_naissance = models.DateField()	
+	first_name = models.CharField(max_length=20)
+	last_name = models.CharField(max_length=20)
+	birthdate = models.DateField()	
 
 	def __str__(self):
-		return self.prenom
+		return self.first_name
 
 	def __repr__(self):
-		return "<Student {}>".format(self.prenom)
+		return "<Student {}>".format(self.first_name)
 
 class Note(models.Model):
 	student = models.ForeignKey(Student , on_delete=models.CASCADE)

@@ -1,0 +1,19 @@
+
+
+
+# python3 manage.py shell
+
+# from student_app.models import Student
+
+# s4 = Student.objects.get(pk=7)
+
+# s4.note_set.create(matiere=‘Maths’, note=18, coefficient=2)
+
+
+• à HarryPotter la matière Français, la note : 13, le coefficient 6
+• à HarryPotter la matière Anglais, la note : 20, le coefficient 2
+
+
+http://127.0.0.1:8000/admin/student_app/student/7/change/
+
+http://127.0.0.1:8000/admin/student_app/note/1/change/
